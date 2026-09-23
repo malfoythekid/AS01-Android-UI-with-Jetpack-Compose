@@ -1,0 +1,18 @@
+package com.example.as01pam
+
+import android.content.Intent
+import android.os.Bundle
+import androidx.activity.ComponentActivity
+
+class MainActivity : ComponentActivity() {
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+
+        startActivity(
+            Intent(this, RegistrationActivity::class.java)
+        )
+
+        finish()
+    }
+}
